@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clipping</title>
+	<style>
+		img {
+			/*clip-path: inset(100px 100px 10px 50px);*/
+			/*clip-path: circle(50px);*/
+			/*clip-path: ellipse(100px 200px);*/
+			/*border-radius: 50%;*/
+			/*clip-path: polygon(0 0, 150px 150px, 300px 300px, 0 600px);*/
+			/*clip-path: polygon(0 0, 100% 0, 50% 100%);*/
+			clip-path: polygon(5% 15%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+		}
+		h1 {
+			font-family: Impact;
+			font-size: 60px;
+			text-align: center;
+			background-image: url(img/1.jpg);
+			background-attachment: fixed;
+			-webkit-text-fill-color:  transparent;
+			-webkit-background-clip: text;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/1.jpg" alt="Coba" width="1000">
+	<h1>Gahasa Purba</h1>
+</body>
+</html>
